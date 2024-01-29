@@ -2,7 +2,10 @@ from bs4 import BeautifulSoup
 import urllib.request
 from datetime import date
 try:
-    from googlesearch import search
+    import os
+    os.chdir("./")
+    # from googleapi import google
+    import googlesearch
 except ImportError:
     print("No module named 'google' was found... ")
 
